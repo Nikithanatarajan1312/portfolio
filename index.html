@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nikitha Natarajan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="logo">NN<span>.</span></a>
+        <button class="nav-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#games">Play</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-sub">Hi, I'm</p>
+            <h1>Nikitha Natarajan</h1>
+            <p class="hero-tag">Data Scientist · ML Researcher · Software Engineer</p>
+            <div class="hero-ctas">
+                <a href="#about" class="cta">Explore</a>
+                <a href="resume.pdf" class="cta cta-outline" download>Download Resume</a>
+            </div>
+        </div>
+        <div class="scroll-hint"></div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h2 class="about-title">About</h2>
+                <div class="about-title-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p class="about-lead">I'm a Computer Science graduate student at Texas A&M University, passionate about building intelligent systems that solve real-world problems.</p>
+                        <p class="about-body">With expertise in data engineering, machine learning, and AI, I've engineered scalable data pipelines processing millions of records and developed solutions from IoT systems to evidence retrieval. Currently pursuing my Master's with a 4.0 GPA, I'm exploring AI, NLP, and information retrieval while contributing as a Graduate Student Technician.</p>
+                    </div>
+                    <div class="about-highlight">
+                        <span class="about-highlight-label">Focus</span>
+                        <p class="about-highlight-text">Transforming complex data into actionable insights</p>
+                    </div>
+                </div>
+                <div class="about-sidebar">
+                    <div class="about-photo-card">
+                        <div class="about-photo-wrap">
+                            <img src="photo.png" alt="Nikitha Natarajan" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling?.classList?.add('show');">
+                            <div class="about-photo-placeholder" aria-hidden="true"><span>NN</span></div>
+                        </div>
+                    </div>
+                    <div class="about-status-card">
+                        <span class="about-status-badge">Available</span>
+                        <p class="about-status-text">Open to opportunities in ML, Data Science & Software Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section section-dark">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Aug 2025 – May 2027</span>
+                    <div class="timeline-org">
+                        <img src="TAMU.jpg" alt="Texas A&M" class="org-logo">
+                        <div>
+                            <h3>Master of Science in Computer Science</h3>
+                            <p>Texas A&M University, College Station, Texas</p>
+                        </div>
+                    </div>
+                    <p class="timeline-desc"><span class="gpa-badge">GPA: 4.0</span> Relevant Courses: Analysis of Algorithms, Artificial Intelligence, Information Storage and Retrieval, Data Mining, Natural Language Processing, Data Visualization</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jun 2019 – May 2023</span>
+                    <div class="timeline-org">
+                        <img src="srm.webp" alt="SRM IST" class="org-logo">
+                        <div>
+                            <h3>Bachelor of Technology, Computer Science and Engineering</h3>
+                            <p>SRM Institute of Science and Technology, Kattankulathur, Chennai, India</p>
+                        </div>
+                    </div>
+                    <p class="timeline-desc"><span class="gpa-badge">GPA: 9.73/10</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Oct 2025 – Present</span>
+                    <h3>Graduate Student Technician</h3>
+                    <p>CSE Department, Texas A&M University</p>
+                    <p class="timeline-desc">Senior Grader for CSCE 431: Software Engineering and CSCE 481: Seminar under Prof. Pauline Wade.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jun 2023 – Jul 2024</span>
+                    <h3>Business Technology Solutions Associate</h3>
+                    <p>ZS Associates, Pune, India</p>
+                    <ul class="timeline-desc">
+                        <li>Engineered a major project for a leading pharmaceutical company. Designed, developed, and launched high-efficiency ETL/data pipelines using Python, SQL and PySpark, processing and transforming 10M+ healthcare and pharmaceutical records, enabling downstream analytics and reporting.</li>
+                        <li>Managed and consolidated multiple datasets into a unified system, configured logic, developed metrics, provided actionable insights, and optimized queries, resulting in a 30% increase in query efficiency and enhanced system scalability.</li>
+                        <li>Retrained ML models to enhance accuracy by incorporating new constraints, boosting decision-making efficiency by 30%.</li>
+                        <li>Resolved data integrity issues and automated job scheduling and pipeline orchestration, reducing data processing time by 35% and improving productivity.</li>
+                        <li>Conducted end-to-end testing of data pipelines across multiple business units, identifying bottlenecks and implementing performance and reliability enhancements.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jan 2022 – Apr 2022</span>
+                    <h3>Software Engineering Intern</h3>
+                    <p>HighRadius, India</p>
+                    <ul class="timeline-desc">
+                        <li>Built and deployed an AI-enabled Fintech B2B Cloud Application, developing the full stack web-based product using Python, Machine Learning, HTML, CSS, JavaScript, Java, JDBC, and MySQL. Constructed relevant UI components and backend system.</li>
+                        <li>Designed seamless user experience, engineered and integrated data models and ML algorithms, improving prediction accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Aug 2021 – Nov 2021</span>
+                    <h3>Data Science Trainee and Intern</h3>
+                    <p>ShapeAI, India</p>
+                    <ul class="timeline-desc">
+                        <li>Analyzed time series data, performing data cleaning, feature engineering, and statistical modeling to build accurate predictive models using Python (Pandas, NumPy, Scikit-learn, TensorFlow); visualized insights effectively.</li>
+                        <li>Conducted sales and customer segmentation, implemented market basket optimization, and performed ads and sentiment analysis.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-dark">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid-plain">
+            <div class="skill-card-plain">
+                <h3>Programming</h3>
+                <p>Python (NumPy, Pandas, Matplotlib, Seaborn), SQL, R, C, C++, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card-plain">
+                <h3>Software Engineering</h3>
+                <p>React, Node.js, Express.js, REST APIs, Django, Backend Development, Full-Stack Web Development, Figma</p>
+            </div>
+            <div class="skill-card-plain">
+                <h3>AI & ML</h3>
+                <p>LLMs, Agentic AI, Prompt Engineering, RL, scikit-learn, TensorFlow, PyTorch, SciPy</p>
+            </div>
+            <div class="skill-card-plain">
+                <h3>Data Analytics</h3>
+                <p>Power BI, Tableau, Jupyter, MATLAB, MS Excel</p>
+            </div>
+            <div class="skill-card-plain">
+                <h3>Cloud & DevOps</h3>
+                <p>AWS, Google Cloud Platform, MySQL, Git, GitHub, CI/CD pipelines</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <h3 class="subsection-title">Currently working on</h3>
+        <div class="projects-grid">
+            <article class="project-card-with-img project-ongoing">
+                <div class="project-img-wrap">
+                    <img src="https://cdn.dribbble.com/userupload/42538290/file/original-054830221a272484d4604ca2d8eed8ad.png?resize=2048x1152&vertical=center" alt="F1 Racing" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <span class="project-badge">Ongoing</span>
+                    <h3>F1 Race Analytics & Predictive Dashboard</h3>
+                    <p class="project-tag">Full Stack Data Engineering & Visualization · Present</p>
+                    <p>Developing a full-stack F1 analytics dashboard integrating predictive modeling and advanced interactive visualizations. Analyzing lap times, tire strategies, and driver performance using ML-based predictions and diverse visual representations such as box plots, heatmaps, telemetry graphs, and race evolution timelines.</p>
+                    <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="project-link">View project / Code (Under Development) →</a>
+                </div>
+            </article>
+            <article class="project-card-with-img project-ongoing">
+                <div class="project-img-wrap">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/071/331/215/small/young-woman-using-ar-glasses-with-holographic-interface-futuristic-office-space-innovation-photo.jpg" alt="Communication" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <span class="project-badge">Ongoing</span>
+                    <h3>ARgueViz</h3>
+                    <p class="project-tag">AR · Real-Time Argument Structure Analysis · Present</p>
+                    <p>Developing an augmented reality system that visualizes argument structures in real-time conversations. Integrates live speech transcription, speaker diarization, and structured reasoning extraction to generate dynamic graph-based visualizations of debate flows within an AR interface.</p>
+                    <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="project-link">View project / Code (Under Development) →</a>
+                </div>
+            </article>
+        </div>
+        <h3 class="subsection-title">Past projects</h3>
+        <div class="projects-grid">
+            <article class="project-card-with-img">
+                <div class="project-img-wrap">
+                    <img src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Online-Marketing/information-retrieval-c.jpg" alt="AI / IR" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>MosaicRetriever</h3>
+                    <p class="project-tag">Multi-Algorithm Information Retrieval · Sept 2025 – Nov 2025</p>
+                    <p>Hybrid retrieval system for fact verification combining BM25, dense embeddings, and HyDE-based LLM query expansion. Implements Reciprocal Rank Fusion and adaptive learning-to-rank, with an interactive web interface for real-time ranking evaluation.</p>
+                    <a href="https://mosaicretriever-ui.netlify.app/" target="_blank" rel="noopener" class="project-link">View project / Code →</a>
+                </div>
+            </article>
+            <article class="project-card-with-img">
+                <div class="project-img-wrap">
+                    <img src="https://webfiles.amrita.edu/2024/09/iot-based-system-real-time-infrastructure-reselience.jpg" alt="IoT" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>IoT-Based Cattle Environment & Wellness Monitoring</h3>
+                    <p class="project-tag">Embedded Systems · Jan 2023 – Apr 2023</p>
+                    <p>Developed an ESP32-based IoT system for real-time cattle environment monitoring using Embedded C and multi-sensor integration. Implemented Firebase cloud synchronization and a mobile dashboard with alert mechanisms for abnormal environmental conditions.</p>
+                    <a href="https://ieeexplore.ieee.org/document/10307579" target="_blank" rel="noopener" class="project-link">IEEE Paper →</a>
+                </div>
+            </article>
+            <article class="project-card-with-img">
+                <div class="project-img-wrap">
+                    <img src="https://blueintel.ai/images/outer.png" alt="Driver safety" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>Driver Fatigue Detection</h3>
+                    <p class="project-tag">CNN-Based Computer Vision · Aug 2022 – Oct 2022</p>
+                    <p>Implemented a CNN-based fatigue detection pipeline integrating facial landmark extraction (Dlib), feature preprocessing (OpenCV), and supervised classification of eye and mouth states. Designed a threshold-based alert mechanism to detect prolonged eyelid closure and yawning patterns, achieving ~87% accuracy.</p>
+                    <a href="https://doi.org/10.22214/ijraset.2023.55112" target="_blank" rel="noopener" class="project-link">Paper (DOI) →</a>
+                </div>
+            </article>
+            <article class="project-card-with-img">
+                <div class="project-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=340&fit=crop" alt="Machine learning" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>AI Fintech B2B Cloud Application</h3>
+                    <p class="project-tag">Software Engineering Intern · Full Stack + ML · 2022</p>
+                    <p>Developed and integrated features for an AI-enabled B2B fintech cloud platform during a software engineering internship. Worked across frontend, backend, database layers, and ML model integration in a production-oriented environment.</p>
+                    <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="project-link">Architecture Overview →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="publication" class="section">
+        <h2 class="section-title">Publication</h2>
+        <div class="list-cards">
+            <div class="list-card">
+                <h3>IoT-based cattle environment and wellness monitoring system</h3>
+                <p class="list-meta">2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT) · 2023</p>
+                <p>Co-authors: Bandi, S., & P, M. <a href="https://ieeexplore.ieee.org/document/10307579" target="_blank" rel="noopener">IEEE Xplore</a></p>
+            </div>
+            <div class="list-card">
+                <h3>Smart driver fatigue detection system using CNN</h3>
+                <p class="list-meta">International Journal for Research in Applied Science and Engineering Technology (IJRASET) · 2023</p>
+                <p>Co-author: Mateti, K. R. <a href="https://doi.org/10.22214/ijraset.2023.55112" target="_blank" rel="noopener">DOI Link</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certification" class="section section-dark">
+        <h2 class="section-title">Certification</h2>
+        <div class="cert-grid-with-logos">
+            <a href="https://www.credly.com/badges/060083fa-dbfa-4cff-8abe-f066e7b0d30c/public_url" target="_blank" rel="noopener" class="cert-card-logo">
+                <img src="https://www.comnetgroup.com/wp-content/uploads/2021/08/AWS-Certified-Cloud-Practitioner-logo.png" alt="AWS Certified Cloud Practitioner" class="cert-logo">
+                <h3>AWS Cloud Practitioner</h3>
+                <p>AWS Certified Cloud Practitioner · Verify</p>
+            </a>
+            <a target="_blank" rel="noopener" class="cert-card-logo">
+                <img src="https://mms.businesswire.com/media/20240506303525/en/1354961/22/ZS_Logo_RGB.jpg" alt="Certification" class="cert-logo cert-logo-icon">
+                <h3>Generative AI Immersion</h3>
+                <p>Analyst+ (ZS Associates)</p>
+            </a>
+            <a href="https://www.datacamp.com/certificate/DA0028724472362" target="_blank" rel="noopener" class="cert-card-logo">
+                <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_4072699d88b493349a899494aad8b890/datacamp.png" alt="Data Analyst" class="cert-logo cert-logo-icon">
+                <h3>Data Analyst</h3>
+                <p>DataCamp</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="awards" class="section">
+        <h2 class="section-title">Awards</h2>
+        <div class="timeline timeline-compact timeline-awards">
+            <div class="timeline-item">
+                <div class="timeline-marker timeline-marker-award">🏅</div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2023</span>
+                    <h3>Silver Medalist - University Second Rank</h3>
+                    <p>B. Tech Computer Science Engineering with specialization in Cloud Computing, SRM IST</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker timeline-marker-award">🏆</div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2019 – 2022</span>
+                    <h3>Performance-based Scholarships</h3>
+                    <p>Received for three consecutive academic years from SRM IST</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section section-dark">
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-card">
+                <div class="hobby-icon">🎨</div>
+                <h3>Digital Art</h3>
+                <p>Creating digital illustrations and designs</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-icon">🧶</div>
+                <h3>Crochet</h3>
+                <p>Handcrafting cozy creations</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-icon">🎯</div>
+                <h3>Darts</h3>
+                <p>Precision and focus on the board</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-icon">🎹</div>
+                <h3>Piano</h3>
+                <p>Playing melodies and harmonies</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="section games-section">
+        <h2 class="section-title">Playground</h2>
+        <p class="section-sub">Tiny interactive experiments I built for fun - memory match and reaction test.</p>
+        <div class="games-container">
+            <div class="game-box">
+                <h3>Memory Match</h3>
+                <div class="memory-game" id="memoryGame">
+                    <div class="memory-board" id="memoryBoard"></div>
+                    <p class="memory-status" id="memoryStatus">Match all pairs!</p>
+                    <button type="button" class="game-btn" id="memoryReset">New Game</button>
+                </div>
+            </div>
+            <div class="game-box">
+                <h3>Reaction Test</h3>
+                <div class="reaction-game" id="reactionGame">
+                    <div class="reaction-area" id="reactionArea">
+                        <span class="reaction-wait" id="reactionWait">Click to start</span>
+                        <span class="reaction-go" id="reactionGo">CLICK NOW!</span>
+                    </div>
+                    <p class="reaction-result" id="reactionResult"></p>
+                    <button type="button" class="game-btn" id="reactionReset">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-dark contact-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrap">
+            <p class="contact-text">Get in touch.</p>
+            <div class="contact-details">
+                <p class="contact-row"><strong>Email</strong> <a href="mailto:nikithanatarajan1312@gmail.com">nikithanatarajan1312@gmail.com</a></p>
+                <p class="contact-row"><strong>Phone</strong> <a href="tel:+19795749337">(979) 574-9337</a></p>
+                <p class="contact-row"><strong>Location</strong> College Station, TX, USA</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/nikitha-n-264734217" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+                <a href="resume.pdf" class="contact-link" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> · Nikitha Natarajan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

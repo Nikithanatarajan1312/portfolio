@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Nikitha Natarajan</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
             <p class="hero-tag">Data Scientist · ML Researcher · Software Engineer</p>
             <div class="hero-ctas">
                 <a href="#about" class="cta">Explore</a>
-                <a href="resume.pdf" class="cta cta-outline" download>Download Resume</a>
+                <a href="assets/docs/resume.pdf" class="cta cta-outline" download>Download Resume</a>
             </div>
         </div>
         <div class="scroll-hint"></div>
@@ -64,7 +64,7 @@
                 <div class="about-sidebar">
                     <div class="about-photo-card">
                         <div class="about-photo-wrap">
-                            <img src="photo.png" alt="Nikitha Natarajan" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling?.classList?.add('show');">
+                            <img src="assets/images/photo.png" alt="Nikitha Natarajan" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling?.classList?.add('show');">
                             <div class="about-photo-placeholder" aria-hidden="true"><span>NN</span></div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                 <div class="timeline-content">
                     <span class="timeline-date">Aug 2025 – May 2027</span>
                     <div class="timeline-org">
-                        <img src="TAMU.jpg" alt="Texas A&M" class="org-logo">
+                        <img src="assets/images/TAMU.jpg" alt="Texas A&M" class="org-logo">
                         <div>
                             <h3>Master of Science in Computer Science</h3>
                             <p>Texas A&M University, College Station, Texas</p>
@@ -99,7 +99,7 @@
                 <div class="timeline-content">
                     <span class="timeline-date">Jun 2019 – May 2023</span>
                     <div class="timeline-org">
-                        <img src="srm.webp" alt="SRM IST" class="org-logo">
+                        <img src="assets/images/srm.webp" alt="SRM IST" class="org-logo">
                         <div>
                             <h3>Bachelor of Technology, Computer Science and Engineering</h3>
                             <p>SRM Institute of Science and Technology, Kattankulathur, Chennai, India</p>
@@ -130,11 +130,9 @@
                     <h3>Business Technology Solutions Associate</h3>
                     <p>ZS Associates, Pune, India</p>
                     <ul class="timeline-desc">
-                        <li>Engineered a major project for a leading pharmaceutical company. Designed, developed, and launched high-efficiency ETL/data pipelines using Python, SQL and PySpark, processing and transforming 10M+ healthcare and pharmaceutical records, enabling downstream analytics and reporting.</li>
-                        <li>Managed and consolidated multiple datasets into a unified system, configured logic, developed metrics, provided actionable insights, and optimized queries, resulting in a 30% increase in query efficiency and enhanced system scalability.</li>
-                        <li>Retrained ML models to enhance accuracy by incorporating new constraints, boosting decision-making efficiency by 30%.</li>
-                        <li>Resolved data integrity issues and automated job scheduling and pipeline orchestration, reducing data processing time by 35% and improving productivity.</li>
-                        <li>Conducted end-to-end testing of data pipelines across multiple business units, identifying bottlenecks and implementing performance and reliability enhancements.</li>
+                        <li>Engineered high-efficiency data pipelines using Python, SQL, and PySpark, processing and transforming 10M+ healthcare and pharmaceutical records to support downstream analytics and reporting.</li>
+                        <li>Consolidated multi-source datasets and developed business metrics; retrained ML models (XGBoost, K-Means) with domain constraints, improving pharmaceutical sales targeting decision accuracy by 30%.</li>
+                        <li>Automated pipeline orchestration, scheduling, and validation and performed end-to-end testing and performance optimization, improving processing time by 35%.</li>
                     </ul>
                 </div>
             </div>
@@ -145,8 +143,8 @@
                     <h3>Software Engineering Intern</h3>
                     <p>HighRadius, India</p>
                     <ul class="timeline-desc">
-                        <li>Built and deployed an AI-enabled Fintech B2B Cloud Application, developing the full stack web-based product using Python, Machine Learning, HTML, CSS, JavaScript, Java, JDBC, and MySQL. Constructed relevant UI components and backend system.</li>
-                        <li>Designed seamless user experience, engineered and integrated data models and ML algorithms, improving prediction accuracy.</li>
+                        <li>Built and deployed an AI-enabled FinTech application using Python, Java, JDBC, MySQL, and JavaScript, developing full-stack systems, REST APIs, and data pipelines for invoice and AR workflows.</li>
+                        <li>Engineered and integrated data models and ML components for predictive analytics on invoice data, improving payment delay prediction and workflow efficiency.</li>
                     </ul>
                 </div>
             </div>
@@ -169,24 +167,20 @@
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid-plain">
             <div class="skill-card-plain">
-                <h3>Programming</h3>
-                <p>Python (NumPy, Pandas, Matplotlib, Seaborn), SQL, R, C, C++, HTML, CSS, JavaScript</p>
+                <h3>Languages</h3>
+                <p>Python, SQL, C++, C, R, JavaScript</p>
             </div>
             <div class="skill-card-plain">
-                <h3>Software Engineering</h3>
-                <p>React, Node.js, Express.js, REST APIs, Django, Backend Development, Full-Stack Web Development, Figma</p>
+                <h3>Machine Learning & AI</h3>
+                <p>PyTorch, TensorFlow, scikit-learn, LLMs, RAG, LoRA, PEFT, Hugging Face Transformers, LangChain, NLP, Computer Vision, OpenCV, PySpark, ETL</p>
             </div>
             <div class="skill-card-plain">
-                <h3>AI & ML</h3>
-                <p>LLMs, Agentic AI, Prompt Engineering, RL, scikit-learn, TensorFlow, PyTorch, SciPy</p>
+                <h3>Data & Analytics</h3>
+                <p>Pandas, NumPy, Matplotlib, Seaborn, Power BI, Tableau, MATLAB</p>
             </div>
             <div class="skill-card-plain">
-                <h3>Data Analytics</h3>
-                <p>Power BI, Tableau, Jupyter, MATLAB, MS Excel</p>
-            </div>
-            <div class="skill-card-plain">
-                <h3>Cloud & DevOps</h3>
-                <p>AWS, Google Cloud Platform, MySQL, Git, GitHub, CI/CD pipelines</p>
+                <h3>Databases & Cloud</h3>
+                <p>MySQL, PostgreSQL, AWS (EC2, S3), Google Cloud Platform, Docker, Git, GitHub, CI/CD</p>
             </div>
         </div>
     </section>
@@ -197,26 +191,34 @@
         <div class="projects-grid">
             <article class="project-card-with-img project-ongoing">
                 <div class="project-img-wrap">
-                    <img src="https://cdn.dribbble.com/userupload/42538290/file/original-054830221a272484d4604ca2d8eed8ad.png?resize=2048x1152&vertical=center" alt="F1 Racing" loading="lazy">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/071/331/215/small/young-woman-using-ar-glasses-with-holographic-interface-futuristic-office-space-innovation-photo.jpg" alt="ARgueViz" loading="lazy">
                 </div>
                 <div class="project-body">
                     <span class="project-badge">Ongoing</span>
-                    <h3>F1 Race Analytics & Predictive Dashboard</h3>
-                    <p class="project-tag">Full Stack Data Engineering & Visualization · Present</p>
-                    <p>Developing a full-stack F1 analytics dashboard integrating predictive modeling and advanced interactive visualizations. Analyzing lap times, tire strategies, and driver performance using ML-based predictions and diverse visual representations such as box plots, heatmaps, telemetry graphs, and race evolution timelines.</p>
-                    <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="project-link">View project / Code (Under Development) →</a>
+                    <h3>ARgueViz: Real-Time AR Argument Mining and Debate Intelligence System</h3>
+                    <p class="project-tag">Jan 2025 – Present</p>
+                    <ul class="timeline-desc">
+                        <li>Built a low-latency end-to-end argument mining pipeline (audio, ASR via Deepgram/Whisper, segmentation, LLM inference) using FastAPI, WebSockets, and LangChain, deployed on AR device (Even G2 Pro).</li>
+                        <li>Engineered speaker attribution (ECAPA-TDNN) and semantic linking (MiniLM + heuristics) for support/attack graph construction, enabling real-time structured debate analysis and feedback.</li>
+                        <li>Fine-tuned LLaMA-based models using PyTorch with LoRA/PEFT and built an interactive system generating structured insights, evaluated against baseline and LLM approaches.</li>
+                    </ul>
+                    <span class="project-link project-coming-soon">Coming soon</span>
                 </div>
             </article>
             <article class="project-card-with-img project-ongoing">
                 <div class="project-img-wrap">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/071/331/215/small/young-woman-using-ar-glasses-with-holographic-interface-futuristic-office-space-innovation-photo.jpg" alt="Communication" loading="lazy">
+                    <img src="https://cdn.dribbble.com/userupload/42538290/file/original-054830221a272484d4604ca2d8eed8ad.png?resize=2048x1152&vertical=center" alt="F1 Racing" loading="lazy">
                 </div>
                 <div class="project-body">
                     <span class="project-badge">Ongoing</span>
-                    <h3>ARgueViz</h3>
-                    <p class="project-tag">AR · Real-Time Argument Structure Analysis · Present</p>
-                    <p>Developing an augmented reality system that visualizes argument structures in real-time conversations. Integrates live speech transcription, speaker diarization, and structured reasoning extraction to generate dynamic graph-based visualizations of debate flows within an AR interface.</p>
-                    <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="project-link">View project / Code (Under Development) →</a>
+                    <h3>What If? Interactive Strategy Visualization for Formula 1</h3>
+                    <p class="project-tag">Full Stack Data Engineering & Visualization · Present</p>
+                    <ul class="timeline-desc">
+                        <li>Built an interactive counterfactual simulation system enabling users to analyze race strategy decisions (pit timing, tyre choices), improving interpretability of complex race dynamics.</li>
+                        <li>Designed a real-time backend pipeline (FastAPI + FastF1) to process and serve lap-level telemetry data and simulated outcomes for dynamic visualization.</li>
+                        <li>Developed multi-view visual analytics (D3.js) linking temporal, categorical, and event-based data to support causal reasoning and strategy comparison.</li>
+                    </ul>
+                    <a href="https://github.com/Nikithanatarajan1312/What-If-Interactive-Strategy-Visualization-for-Formula-1" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                 </div>
             </article>
         </div>
@@ -224,12 +226,15 @@
         <div class="projects-grid">
             <article class="project-card-with-img">
                 <div class="project-img-wrap">
-                    <img src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Online-Marketing/information-retrieval-c.jpg" alt="AI / IR" loading="lazy">
+                    <img src="assets/images/mosaic_retriever.png" alt="MosaicRetriever" loading="lazy">
                 </div>
                 <div class="project-body">
-                    <h3>MosaicRetriever</h3>
-                    <p class="project-tag">Multi-Algorithm Information Retrieval · Sept 2025 – Nov 2025</p>
-                    <p>Hybrid retrieval system for fact verification combining BM25, dense embeddings, and HyDE-based LLM query expansion. Implements Reciprocal Rank Fusion and adaptive learning-to-rank, with an interactive web interface for real-time ranking evaluation.</p>
+                    <h3>MosaicRetriever: Hybrid Retrieval and Ranking System</h3>
+                    <p class="project-tag">Sep 2025 – Nov 2025</p>
+                    <ul class="timeline-desc">
+                        <li>Built a hybrid retrieval system combining BM25, dense embeddings, and HyDE-based LLM query expansion, and implemented rank fusion (RRF) for improved recall and semantic matching.</li>
+                        <li>Implemented learning-to-rank (LTR) for re-ranking and built an evaluation interface for retrieval analysis.</li>
+                    </ul>
                     <a href="https://mosaicretriever-ui.netlify.app/" target="_blank" rel="noopener" class="project-link">View project / Code →</a>
                 </div>
             </article>
@@ -263,7 +268,6 @@
                     <h3>AI Fintech B2B Cloud Application</h3>
                     <p class="project-tag">Software Engineering Intern · Full Stack + ML · 2022</p>
                     <p>Developed and integrated features for an AI-enabled B2B fintech cloud platform during a software engineering internship. Worked across frontend, backend, database layers, and ML model integration in a production-oriented environment.</p>
-                    <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="project-link">Architecture Overview →</a>
                 </div>
             </article>
         </div>
@@ -392,7 +396,7 @@
             <div class="contact-links">
                 <a href="https://linkedin.com/in/nikitha-n-264734217" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
                 <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="contact-link">GitHub</a>
-                <a href="resume.pdf" class="contact-link" download>Download Resume</a>
+                <a href="assets/docs/resume.pdf" class="contact-link" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -401,6 +405,6 @@
         <p>© <span id="year"></span> · Nikitha Natarajan</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

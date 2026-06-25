@@ -181,4 +181,38 @@
         reactionGo.style.display = 'none';
         reactionResult.textContent = '';
     });
+
+    var RESUME_URL = 'assets/docs/Nikitha_Natarajan_Resume.pdf';
+    var resumeModal = document.getElementById('resumeModal');
+    var resumeFrame = document.getElementById('resumeFrame');
+
+    function openResumePreview() {
+        if (!resumeModal || !resumeFrame) return;
+        resumeFrame.src = RESUME_URL;
+        resumeModal.classList.add('is-open');
+        resumeModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('resume-modal-open');
+    }
+
+    function closeResumePreview() {
+        if (!resumeModal || !resumeFrame) return;
+        resumeModal.classList.remove('is-open');
+        resumeModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('resume-modal-open');
+        resumeFrame.src = '';
+    }
+
+    document.querySelectorAll('.resume-preview-trigger').forEach(function (btn) {
+        btn.addEventListener('click', openResumePreview);
+    });
+
+    resumeModal?.querySelectorAll('[data-resume-close]').forEach(function (el) {
+        el.addEventListener('click', closeResumePreview);
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && resumeModal?.classList.contains('is-open')) {
+            closeResumePreview();
+        }
+    });
 })();

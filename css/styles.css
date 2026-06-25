@@ -289,7 +289,7 @@ a:hover {
 }
 
 .about-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -320,8 +320,8 @@ a:hover {
 
 @media (min-width: 768px) {
     .about-grid {
-        grid-template-columns: 1.2fr 1fr;
-        gap: 3rem;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 3.5rem;
         align-items: start;
     }
 }
@@ -387,17 +387,18 @@ a:hover {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    width: 100%;
 }
 
 .about-photo-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 1.5rem;
+    padding: 2rem;
     backdrop-filter: blur(10px);
     transition: border-color var(--transition), box-shadow var(--transition);
     width: 100%;
-    max-width: 200px;
+    max-width: 320px;
 }
 
 .about-photo-card:hover {
@@ -407,8 +408,8 @@ a:hover {
 
 .about-photo-wrap {
     position: relative;
-    width: 140px;
-    height: 140px;
+    width: min(240px, 100%);
+    aspect-ratio: 1;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -420,7 +421,7 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: -80% -2%;
+    object-position: center 20%;
     display: block;
 }
 
@@ -448,6 +449,8 @@ a:hover {
     backdrop-filter: blur(10px);
     text-align: center;
     transition: border-color var(--transition), box-shadow var(--transition);
+    width: 100%;
+    max-width: 320px;
 }
 
 .about-status-card:hover {
@@ -1217,6 +1220,123 @@ ul.timeline-desc li::before {
     border-color: var(--accent);
     background: var(--accent-dim);
     color: var(--text);
+}
+
+button.contact-link {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* ===== Resume preview modal ===== */
+body.resume-modal-open {
+    overflow: hidden;
+}
+
+.resume-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+}
+
+.resume-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.resume-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.resume-modal-dialog {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: min(920px, 100%);
+    height: min(85vh, 900px);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.resume-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.resume-modal-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.resume-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.resume-modal-download {
+    padding: 0.45rem 0.9rem;
+    background: var(--accent);
+    color: #fff !important;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background var(--transition);
+}
+
+.resume-modal-download:hover {
+    background: var(--accent-hover);
+    color: #fff !important;
+}
+
+.resume-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color var(--transition), color var(--transition);
+}
+
+.resume-modal-close:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.resume-modal-frame {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #fff;
+}
+
+button.resume-preview-trigger {
+    font: inherit;
+    cursor: pointer;
 }
 
 /* ===== Footer ===== */

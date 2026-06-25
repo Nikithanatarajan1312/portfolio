@@ -38,7 +38,8 @@
             <p class="hero-tag">Data Scientist · ML Researcher · Software Engineer</p>
             <div class="hero-ctas">
                 <a href="#about" class="cta">Explore</a>
-                <a href="assets/docs/resume.pdf" class="cta cta-outline" download>Download Resume</a>
+                <button type="button" class="cta cta-outline resume-preview-trigger">View Resume</button>
+                <a href="assets/docs/Nikitha_Natarajan_Resume.pdf" class="cta cta-outline" download>Download Resume</a>
             </div>
         </div>
         <div class="scroll-hint"></div>
@@ -64,7 +65,7 @@
                 <div class="about-sidebar">
                     <div class="about-photo-card">
                         <div class="about-photo-wrap">
-                            <img src="assets/images/photo.png" alt="Nikitha Natarajan" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling?.classList?.add('show');">
+                            <img src="assets/images/1781939191616.png" alt="Nikitha Natarajan" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling?.classList?.add('show');">
                             <div class="about-photo-placeholder" aria-hidden="true"><span>NN</span></div>
                         </div>
                     </div>
@@ -114,6 +115,19 @@
     <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">May 2026 – Present</span>
+                    <h3>Decision Science Intern</h3>
+                    <p>Farmers Insurance Group, United States</p>
+                    <ul class="timeline-desc">
+                        <li>Researching and implementing a credibility adjustment pipeline for insurance risk analytics using statistical modeling techniques, Python, and SQL to improve loss ratio relativities (LRR).</li>
+                        <li>Configuring, executing, and validating GLM-based insurance risk modeling pipelines, evaluating predictive performance, model stability, and statistical behavior across multiple insurance rating factors.</li>
+                        <li>Integrating the credibility adjustment pipeline into the existing ROC actuarial modeling pipeline, streamlining automated data processing and model validation in collaboration with engineering and actuarial teams.</li>
+                    </ul>
+                </div>
+            </div>
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -205,25 +219,53 @@
                     <span class="project-link project-coming-soon">Coming soon</span>
                 </div>
             </article>
-            <article class="project-card-with-img project-ongoing">
+        </div>
+        <h3 class="subsection-title">Past projects</h3>
+        <div class="projects-grid">
+            <article class="project-card-with-img">
                 <div class="project-img-wrap">
                     <img src="https://cdn.dribbble.com/userupload/42538290/file/original-054830221a272484d4604ca2d8eed8ad.png?resize=2048x1152&vertical=center" alt="F1 Racing" loading="lazy">
                 </div>
                 <div class="project-body">
-                    <span class="project-badge">Ongoing</span>
                     <h3>What If? Interactive Strategy Visualization for Formula 1</h3>
-                    <p class="project-tag">Full Stack Data Engineering & Visualization · Present</p>
+                    <p class="project-tag">Full Stack Data Engineering & Visualization · Feb 2026 – Apr 2026</p>
                     <ul class="timeline-desc">
-                        <li>Built an interactive counterfactual simulation system enabling users to analyze race strategy decisions (pit timing, tyre choices), improving interpretability of complex race dynamics.</li>
-                        <li>Designed a real-time backend pipeline (FastAPI + FastF1) to process and serve lap-level telemetry data and simulated outcomes for dynamic visualization.</li>
-                        <li>Developed multi-view visual analytics (D3.js) linking temporal, categorical, and event-based data to support causal reasoning and strategy comparison.</li>
+                        <li>Built an interactive Formula 1 analytics platform that visualizes race performance through dynamic charts and allows users to explore how different pit-stop strategies affect race outcomes.</li>
+                        <li>Developed a FastAPI backend and Vue.js frontend with D3.js visualizations, race simulations, and Monte Carlo analysis.</li>
+                        <li>Leveraged FastF1, OpenF1, pandas, and scikit-learn to process race telemetry and compare actual versus simulated strategies.</li>
                     </ul>
                     <a href="https://github.com/Nikithanatarajan1312/What-If-Interactive-Strategy-Visualization-for-Formula-1" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                 </div>
             </article>
-        </div>
-        <h3 class="subsection-title">Past projects</h3>
-        <div class="projects-grid">
+            <article class="project-card-with-img">
+                <div class="project-img-wrap">
+                    <img src="assets/images/meetingMind.png" alt="MeetingMind" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>MeetingMind: NLP Intelligence for Every Meeting</h3>
+                    <p class="project-tag">Feb 2026 – Apr 2026</p>
+                    <ul class="timeline-desc">
+                        <li>Built a meeting intelligence platform that transforms meeting transcripts into actionable insights.</li>
+                        <li>Developed a FastAPI backend and React frontend to generate meeting summaries, extract action items with owners and deadlines, provide contextual Q&amp;A over past transcripts, maintain a searchable meeting history, and integrate with Google Calendar for scheduling follow-ups.</li>
+                        <li>Leveraged Hugging Face Transformers (BART-large-CNN, DistilBERT), spaCy, PostgreSQL, and LLMs (Groq/Gemini) for transcript analysis and information extraction.</li>
+                    </ul>
+                    <a href="https://github.com/Nikithanatarajan1312/MeetingMind" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                </div>
+            </article>
+            <article class="project-card-with-img">
+                <div class="project-img-wrap">
+                    <img src="https://cdn.fastly.steamstatic.com/store/home/store_home_share.jpg" alt="SteaMine" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>SteaMine: Finding Hidden Gems in Steam's Long Tail</h3>
+                    <p class="project-tag">Feb 2026 – Apr 2026</p>
+                    <ul class="timeline-desc">
+                        <li>Developed SteaMine, a data mining project that analyzes Steam game metadata and over 31 million player reviews to uncover hidden gems and explain why highly rated games often receive limited visibility.</li>
+                        <li>Leveraged Apriori, FP-Growth, K-Means clustering, LDA topic modeling, and sentiment analysis to identify player behavior patterns, uncover visibility gaps, and compare store tags with real player experiences.</li>
+                    </ul>
+                    <a href="https://github.com/Nikithanatarajan1312/steam-steamine" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                </div>
+            </article>
             <article class="project-card-with-img">
                 <div class="project-img-wrap">
                     <img src="assets/images/mosaic_retriever.png" alt="MosaicRetriever" loading="lazy">
@@ -396,7 +438,8 @@
             <div class="contact-links">
                 <a href="https://linkedin.com/in/nikitha-n-264734217" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
                 <a href="https://github.com/Nikithanatarajan1312" target="_blank" rel="noopener" class="contact-link">GitHub</a>
-                <a href="assets/docs/resume.pdf" class="contact-link" download>Download Resume</a>
+                <button type="button" class="contact-link resume-preview-trigger">View Resume</button>
+                <a href="assets/docs/Nikitha_Natarajan_Resume.pdf" class="contact-link" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -404,6 +447,20 @@
     <footer class="footer">
         <p>© <span id="year"></span> · Nikitha Natarajan</p>
     </footer>
+
+    <div class="resume-modal" id="resumeModal" aria-hidden="true">
+        <div class="resume-modal-backdrop" data-resume-close></div>
+        <div class="resume-modal-dialog" role="dialog" aria-labelledby="resumeModalTitle" aria-modal="true">
+            <div class="resume-modal-header">
+                <h2 id="resumeModalTitle">Resume</h2>
+                <div class="resume-modal-actions">
+                    <a href="assets/docs/Nikitha_Natarajan_Resume.pdf" class="resume-modal-download" download>Download</a>
+                    <button type="button" class="resume-modal-close" data-resume-close aria-label="Close preview">&times;</button>
+                </div>
+            </div>
+            <iframe class="resume-modal-frame" id="resumeFrame" title="Resume preview"></iframe>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
